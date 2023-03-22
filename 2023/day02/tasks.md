@@ -8,3 +8,18 @@ Task: What is the linux command to
 Note: [Check this file for reference](basic_linux_commands.md)
 
 Check the basic_linux_commands.md file on the same directory day2
+
+
+TASK COMPLETED
+
+1. Check your present working directory.
+
+PWD - Command to check the present working directory.
+
+2. List all the files or directories including hidden files.
+
+ls -la - Command to list all the files or directories including hidden files.
+
+5. Create a nested directory A/B/C/D/E
+
+mkdir A/B/C/D/E - Command will create nested directories.
