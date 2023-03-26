@@ -1,0 +1,61 @@
+devbox@linux-devbox:~/day9$ git clone https://github.com/Arafique458/devops01.git
+Cloning into 'devops01'...
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 14 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (14/14), done.
+devbox@linux-devbox:~/day9$ cd devops01/
+devbox@linux-devbox:~/day9/devops01$ git config user.name "arafique458"
+devbox@linux-devbox:~/day9/devops01$ git config user.email "arafique458@gmail.com"
+devbox@linux-devbox:~/day9/devops01$ 
+devbox@linux-devbox:~/day9/devops01$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+devbox@linux-devbox:~/day9/devops01$ ls -la
+total 20
+drwxrwxr-x 4 devbox devbox 4096 Mar 26 19:15 .
+drwxrwxr-x 3 devbox devbox 4096 Mar 26 19:15 ..
+drwxrwxr-x 8 devbox devbox 4096 Mar 26 19:16 .git
+drwxrwxr-x 2 devbox devbox 4096 Mar 26 19:15 Git
+-rw-rw-r-- 1 devbox devbox   41 Mar 26 19:15 README.md
+devbox@linux-devbox:~/day9/devops01$ cd git
+-bash: cd: git: No such file or directory
+devbox@linux-devbox:~/day9/devops01$ cd Git/
+devbox@linux-devbox:~/day9/devops01/Git$ vim Day-02.txt 
+devbox@linux-devbox:~/day9/devops01/Git$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   Day-02.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+devbox@linux-devbox:~/day9/devops01/Git$ git add .
+devbox@linux-devbox:~/day9/devops01/Git$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   Day-02.txt
+
+devbox@linux-devbox:~/day9/devops01/Git$ git commit -m "Task Completed: Changes were made"
+[main 88238f2] Task Completed: Changes were made
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+devbox@linux-devbox:~/day9/devops01/Git$ git push origin main
+Username for 'https://github.com': arafique458@gmail.com
+Password for 'https://arafique458@gmail.com@github.com': 
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 3 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 479 bytes | 479.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Arafique458/devops01.git
+   2969c64..88238f2  main -> main
+devbox@linux-devbox:~/day9/devops01/Git$ 
